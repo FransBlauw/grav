@@ -159,8 +159,9 @@ class MediumFactory
             case 'thumbnail':
                 return new ThumbnailImageMedium($items, $blueprint);
             case 'animated':
-            case 'vector':
                 return new StaticImageMedium($items, $blueprint);
+            case 'vector':
+                return new VectorImageMedium($items, $blueprint);
             case 'video':
                 return new VideoMedium($items, $blueprint);
             case 'audio':
